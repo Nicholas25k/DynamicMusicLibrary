@@ -1,0 +1,14 @@
+*.dbmdl
+*.jfm
+*.v2
+*.vsidx
+*.lock
+*.v1
+*.suo
+*.user
+*.txt
+*.dacpac
+*.dll
+*.pdb
+*.cache
+MusicLibraryDatabase/obj/Debug/_IsIncrementalBuild

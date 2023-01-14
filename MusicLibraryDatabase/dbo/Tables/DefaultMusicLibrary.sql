@@ -1,0 +1,8 @@
+﻿CREATE TABLE [dbo].[DefaultMusicLibrary]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[Title] VARCHAR(200) NOT NULL,
+	[Composer] VARCHAR(50) NOT NULL,
+	[Arranger] VARCHAR(50) NOT NULL,
+	[Medium] VARCHAR(50) NOT NULL 
+)
