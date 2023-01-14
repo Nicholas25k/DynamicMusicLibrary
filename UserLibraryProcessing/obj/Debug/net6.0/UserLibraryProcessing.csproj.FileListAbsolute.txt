@@ -10,3 +10,15 @@ C:\Users\nickk\source\repos\MusicLibraryDatabase\UserLibraryProcessing\obj\Debug
 C:\Users\nickk\source\repos\MusicLibraryDatabase\UserLibraryProcessing\obj\Debug\net6.0\refint\UserLibraryProcessing.dll
 C:\Users\nickk\source\repos\MusicLibraryDatabase\UserLibraryProcessing\obj\Debug\net6.0\UserLibraryProcessing.pdb
 C:\Users\nickk\source\repos\MusicLibraryDatabase\UserLibraryProcessing\obj\Debug\net6.0\ref\UserLibraryProcessing.dll
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\UserLibraryProcessing\bin\Debug\net6.0\UserLibraryProcessing.deps.json
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\UserLibraryProcessing\bin\Debug\net6.0\UserLibraryProcessing.dll
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\UserLibraryProcessing\bin\Debug\net6.0\UserLibraryProcessing.pdb
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\UserLibraryProcessing\obj\Debug\net6.0\UserLibraryProcessing.csproj.AssemblyReference.cache
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\UserLibraryProcessing\obj\Debug\net6.0\UserLibraryProcessing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\UserLibraryProcessing\obj\Debug\net6.0\UserLibraryProcessing.AssemblyInfoInputs.cache
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\UserLibraryProcessing\obj\Debug\net6.0\UserLibraryProcessing.AssemblyInfo.cs
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\UserLibraryProcessing\obj\Debug\net6.0\UserLibraryProcessing.csproj.CoreCompileInputs.cache
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\UserLibraryProcessing\obj\Debug\net6.0\UserLibraryProcessing.dll
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\UserLibraryProcessing\obj\Debug\net6.0\refint\UserLibraryProcessing.dll
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\UserLibraryProcessing\obj\Debug\net6.0\UserLibraryProcessing.pdb
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\UserLibraryProcessing\obj\Debug\net6.0\ref\UserLibraryProcessing.dll
