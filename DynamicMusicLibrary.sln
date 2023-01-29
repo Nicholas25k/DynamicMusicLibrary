@@ -12,20 +12,28 @@ EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Processing|Any CPU = Processing|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2F752708-F4B6-4E0C-985C-4CB5890698A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2F752708-F4B6-4E0C-985C-4CB5890698A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F752708-F4B6-4E0C-985C-4CB5890698A3}.Processing|Any CPU.ActiveCfg = Release|Any CPU
+		{2F752708-F4B6-4E0C-985C-4CB5890698A3}.Processing|Any CPU.Build.0 = Release|Any CPU
 		{2F752708-F4B6-4E0C-985C-4CB5890698A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F752708-F4B6-4E0C-985C-4CB5890698A3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FE5C6ED0-693B-43A9-9882-84FBDB9F5CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FE5C6ED0-693B-43A9-9882-84FBDB9F5CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE5C6ED0-693B-43A9-9882-84FBDB9F5CEF}.Processing|Any CPU.ActiveCfg = Processing|Any CPU
+		{FE5C6ED0-693B-43A9-9882-84FBDB9F5CEF}.Processing|Any CPU.Build.0 = Processing|Any CPU
 		{FE5C6ED0-693B-43A9-9882-84FBDB9F5CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FE5C6ED0-693B-43A9-9882-84FBDB9F5CEF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{79041EBA-034D-41D7-8202-86DC20097295}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{79041EBA-034D-41D7-8202-86DC20097295}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79041EBA-034D-41D7-8202-86DC20097295}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{79041EBA-034D-41D7-8202-86DC20097295}.Processing|Any CPU.ActiveCfg = Release|Any CPU
+		{79041EBA-034D-41D7-8202-86DC20097295}.Processing|Any CPU.Build.0 = Release|Any CPU
+		{79041EBA-034D-41D7-8202-86DC20097295}.Processing|Any CPU.Deploy.0 = Release|Any CPU
 		{79041EBA-034D-41D7-8202-86DC20097295}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79041EBA-034D-41D7-8202-86DC20097295}.Release|Any CPU.Build.0 = Release|Any CPU
 		{79041EBA-034D-41D7-8202-86DC20097295}.Release|Any CPU.Deploy.0 = Release|Any CPU
