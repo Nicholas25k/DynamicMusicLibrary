@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\login-background.jpg" />
+    <None Remove="Images\passwordicon.png" />
+    <None Remove="Images\templogo.jpg" />
+    <None Remove="Images\userimage.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Prism.Core" Version="8.1.97" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\login-background.jpg" />
+    <Resource Include="Images\passwordicon.png" />
+    <Resource Include="Images\templogo.jpg" />
+    <Resource Include="Images\userimage.png" />
+  </ItemGroup>
+
+</Project>

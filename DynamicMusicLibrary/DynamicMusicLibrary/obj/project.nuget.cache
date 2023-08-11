@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IMPjlhABDMnb13G5V1oTNhlO3hrS5+aFsUdPWRRvwry6MX8YcflwB7+b5a1CGAIo3+K7C7ax6fsJ4Tnwqd55/A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nickk\\OneDrive\\Documents\\GitHub\\DynamicMusicLibrary\\DynamicMusicLibrary\\DynamicMusicLibrary\\DynamicMusicLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nickk\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512"
+  ],
+  "logs": []
+}
