@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\App.xaml
-31732812053
+3487570927
 
-13-1686295059
+131779974161
 205-64352364
-CustomControls\BindablePasswordBox.xaml;MainWindow.xaml;Views\UserLoginView.xaml;
+Login\CustomControls\BindablePasswordBox.xaml;Login\Views\UserLoginView.xaml;MainWindow.xaml;
 
 False
 

@@ -1,4 +1,5 @@
-﻿using DynamicMusicLibrary.Models;
+﻿using DynamicMusicLibrary.Database;
+using DynamicMusicLibrary.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DynamicMusicLibrary.Repositories
 {
-    public class UserRepository : RepositoryBase, IUserRepository
+    public class UserRepository : DatabaseConnectionString, IUserRepository
     {
         public void Add(UserModel userModel)
         {

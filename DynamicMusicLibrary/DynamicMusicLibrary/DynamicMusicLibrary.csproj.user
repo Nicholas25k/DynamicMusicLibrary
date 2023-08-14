@@ -7,21 +7,21 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="CustomControls\BindablePasswordBox.xaml.cs">
+    <Compile Update="Login\CustomControls\BindablePasswordBox.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="Views\UserLoginView.xaml.cs">
+    <Compile Update="Login\Views\UserLoginView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="CustomControls\BindablePasswordBox.xaml">
+    <Page Update="Login\CustomControls\BindablePasswordBox.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Views\UserLoginView.xaml">
+    <Page Update="Login\Views\UserLoginView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

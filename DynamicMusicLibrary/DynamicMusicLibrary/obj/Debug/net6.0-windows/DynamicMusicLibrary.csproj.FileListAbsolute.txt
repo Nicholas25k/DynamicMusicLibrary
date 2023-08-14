@@ -1,14 +1,10 @@
 C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\DynamicMusicLibrary.csproj.AssemblyReference.cache
-C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\CustomControls\BindablePasswordBox.g.cs
 C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\MainWindow.g.cs
-C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\Views\UserLoginView.g.cs
 C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs
 C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\DynamicMusicLibrary_MarkupCompile.cache
 C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\DynamicMusicLibrary_MarkupCompile.lref
-C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\CustomControls\BindablePasswordBox.baml
 C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\MainWindow.baml
-C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\Views\UserLoginView.baml
 C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\DynamicMusicLibrary.g.resources
 C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\DynamicMusicLibrary.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\DynamicMusicLibrary.AssemblyInfoInputs.cache
@@ -43,3 +39,7 @@ C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary
 C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\DynamicMusicLibrary.csproj.CopyComplete
 C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\DynamicMusicLibrary.genruntimeconfig.cache
 C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\ref\DynamicMusicLibrary.dll
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\Login\CustomControls\BindablePasswordBox.g.cs
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\Login\CustomControls\BindablePasswordBox.baml
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\Login\Views\UserLoginView.g.cs
+C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\Login\Views\UserLoginView.baml

@@ -5,22 +5,22 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace DynamicMusicLibrary.ViewModels
+namespace DynamicMusicLibrary.Login
 {
-    public class CommandViewModel : ICommand
+    public class LoginWindowCommandHandler : ICommand
     {
         //Fields
         private readonly Action<object> _executeAction;
         private readonly Predicate<object>? _canExecuteAction;
 
         //Constructors
-        public CommandViewModel(Action<object> executeAction)
+        public LoginWindowCommandHandler(Action<object> executeAction)
         {
             _executeAction = executeAction;
             _canExecuteAction = null;
         }
 
-        public CommandViewModel(Action<object> executeAction, Predicate<object> canExecuteAction)
+        public LoginWindowCommandHandler(Action<object> executeAction, Predicate<object> canExecuteAction)
         {
             _executeAction = executeAction;
             _canExecuteAction = canExecuteAction;
@@ -30,14 +30,14 @@ namespace DynamicMusicLibrary.ViewModels
         //Events
         public event EventHandler? CanExecuteChanged
         {
-            add { CommandManager.RequerySuggested += value;  }
+            add { CommandManager.RequerySuggested += value; }
             remove { CommandManager.RequerySuggested -= value; }
         }
 
         //Methods
         public bool CanExecute(object? parameter)
         {
-            return _canExecuteAction==null?true : _canExecuteAction(parameter);
+            return _canExecuteAction == null ? true : _canExecuteAction(parameter);
         }
 
         public void Execute(object? parameter)

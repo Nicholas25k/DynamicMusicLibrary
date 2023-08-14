@@ -1,17 +1,12 @@
-﻿using DynamicMusicLibrary.Models;
+﻿using DynamicMusicLibrary.Login;
 using DynamicMusicLibrary.Reactive;
 using DynamicMusicLibrary.Repositories;
 using ReactiveUI;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
 using System.Net;
 using System.Security;
 using System.Security.Principal;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
 namespace DynamicMusicLibrary.ViewModels
@@ -24,11 +19,12 @@ namespace DynamicMusicLibrary.ViewModels
         private string _errorMessage;
         private bool _isViewVisible = true;
         private IUserRepository _userRepository;
+
         public LoginViewModel()
         {
             _userRepository = new UserRepository();
-            LoginCommand = new CommandViewModel(ExecuteLoginCommand, CanExecuteLoginCommand);
-            RecoverPasswordCommand = new CommandViewModel( p => ExecuteRecoverPasswordCommand("", "")); 
+            LoginCommand = new LoginWindowCommandHandler(ExecuteLoginCommand, CanExecuteLoginCommand);
+            RecoverPasswordCommand = new LoginWindowCommandHandler( p => ExecuteRecoverPasswordCommand("", "")); 
         }
 
         private void ExecuteRecoverPasswordCommand(string username, string email)
