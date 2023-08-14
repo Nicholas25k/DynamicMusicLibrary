@@ -13,7 +13,6 @@ namespace DynamicMusicLibrary.Repositories
         public RepositoryBase()
         {
             _connectionString = "Server=localhost\\SQLEXPRESS; Database=DynamicMusicLibraryLoginDb; Integrated Security=true; Trusted_Connection=True";
-            //_connectionString = "Server=localhost\\SQLEXPRESS;Database=DynamicMusicLibraryDb;Trusted_Connection=True";
         }
 
         protected SqlConnection GetConnection()

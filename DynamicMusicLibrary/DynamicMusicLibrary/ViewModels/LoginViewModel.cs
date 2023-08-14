@@ -1,6 +1,7 @@
 ﻿using DynamicMusicLibrary.Models;
 using DynamicMusicLibrary.Reactive;
 using DynamicMusicLibrary.Repositories;
+using ReactiveUI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +16,7 @@ using System.Windows.Input;
 
 namespace DynamicMusicLibrary.ViewModels
 {
-    public class LoginViewModel : BaseViewModel
+    public class LoginViewModel : BasicReactiveObjectDisposable
     {
         //Fields
         private string _userName;
@@ -23,20 +24,11 @@ namespace DynamicMusicLibrary.ViewModels
         private string _errorMessage;
         private bool _isViewVisible = true;
         private IUserRepository _userRepository;
-
-        public event PropertyChangingEventHandler? PropertyChanging;
-
         public LoginViewModel()
         {
             _userRepository = new UserRepository();
             LoginCommand = new CommandViewModel(ExecuteLoginCommand, CanExecuteLoginCommand);
             RecoverPasswordCommand = new CommandViewModel( p => ExecuteRecoverPasswordCommand("", "")); 
-        }
-
-        public Task ReturnVisibilityChange()
-        {
-            
-            return Task.CompletedTask;
         }
 
         private void ExecuteRecoverPasswordCommand(string username, string email)
@@ -82,8 +74,7 @@ namespace DynamicMusicLibrary.ViewModels
 
             set 
             { 
-                _userName = value;
-                OnPropertyChanged(nameof(UserName)); 
+                this.RaiseAndSetIfChanged(ref _userName, value); 
             } 
         }
 
@@ -96,8 +87,7 @@ namespace DynamicMusicLibrary.ViewModels
 
             set
             {
-                _password = value;
-                OnPropertyChanged(nameof(Password));
+                this.RaiseAndSetIfChanged(ref _password, value);
             }
         }
 
@@ -110,8 +100,7 @@ namespace DynamicMusicLibrary.ViewModels
 
             set
             {
-                _errorMessage = value;
-                OnPropertyChanged(nameof(ErrorMessage));
+                this.RaiseAndSetIfChanged(ref _errorMessage, value);
             }
         }
 
@@ -124,8 +113,7 @@ namespace DynamicMusicLibrary.ViewModels
 
             set
             {
-                _isViewVisible = value;
-                OnPropertyChanged(nameof(IsViewVisible));
+                this.RaiseAndSetIfChanged(ref _isViewVisible, value);
             }
         }
 
