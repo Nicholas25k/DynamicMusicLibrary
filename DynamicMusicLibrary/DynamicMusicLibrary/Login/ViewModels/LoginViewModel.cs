@@ -1,4 +1,5 @@
 ﻿using DynamicMusicLibrary.Login;
+using DynamicMusicLibrary.Login.Repositories;
 using DynamicMusicLibrary.Reactive;
 using DynamicMusicLibrary.Repositories;
 using ReactiveUI;
@@ -18,11 +19,11 @@ namespace DynamicMusicLibrary.ViewModels
         private SecureString _password;
         private string _errorMessage;
         private bool _isViewVisible = true;
-        private IUserRepository _userRepository;
+        private UserAuthenticationHandler _authenticationHandler;
 
         public LoginViewModel()
         {
-            _userRepository = new UserRepository();
+            _authenticationHandler = new UserAuthenticationHandler();
             LoginCommand = new LoginWindowCommandHandler(ExecuteLoginCommand, CanExecuteLoginCommand);
             RecoverPasswordCommand = new LoginWindowCommandHandler( p => ExecuteRecoverPasswordCommand("", "")); 
         }
@@ -44,7 +45,7 @@ namespace DynamicMusicLibrary.ViewModels
 
         private void ExecuteLoginCommand(object obj)
         {
-            var isValidUser = _userRepository.AuthenticateUser(new NetworkCredential(UserName, Password));
+            var isValidUser = _authenticationHandler.AuthenticateUser(new NetworkCredential(UserName, Password));
 
             if(isValidUser)
             {
@@ -56,7 +57,7 @@ namespace DynamicMusicLibrary.ViewModels
 
             else
             {
-                ErrorMessage = "*Invalid username of password";
+                ErrorMessage = "*Invalid username or password";
             }
         }
 

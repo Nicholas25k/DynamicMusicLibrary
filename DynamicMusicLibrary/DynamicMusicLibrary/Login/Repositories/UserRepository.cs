@@ -1,6 +1,10 @@
-﻿using DynamicMusicLibrary.Database;
+﻿using DynamicData;
+using DynamicMusicLibrary.Database;
 using DynamicMusicLibrary.Models;
+using DynamicMusicLibrary.Reactive;
+using DynamicMusicLibrary.Respository;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -11,52 +15,7 @@ using System.Threading.Tasks;
 
 namespace DynamicMusicLibrary.Repositories
 {
-    public class UserRepository : DatabaseConnectionString, IUserRepository
+    public class UserRepository : RepositoryBridge<UserModel>, IUserRepository
     {
-        public void Add(UserModel userModel)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool AuthenticateUser(NetworkCredential credential)
-        {
-            bool validUser;
-            using (var connection = GetConnection())
-            using (var command = new SqlCommand())
-            {
-                connection.Open();
-                command.Connection = connection;
-                command.CommandText = "select *from [User] where username=@username and [Password]=@password";
-                command.Parameters.Add("@username", SqlDbType.NVarChar).Value = credential.UserName;
-                command.Parameters.Add("@password", SqlDbType.NVarChar).Value = credential.Password;
-                validUser = command.ExecuteScalar() == null ? false : true;
-            }
-            return validUser;
-        }
-
-        public void Edit(UserModel userModel)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<UserModel> GetByAll()
-        {
-            throw new NotImplementedException();
-        }
-
-        public UserModel GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public UserModel GetByUsername(string username)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Remove(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

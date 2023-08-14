@@ -1,17 +1,11 @@
 ﻿using DynamicMusicLibrary.Models;
+using DynamicMusicLibrary.Respository;
 using System.Collections.Generic;
 using System.Net;
 
 namespace DynamicMusicLibrary.Repositories
 {
-    public interface IUserRepository
+    public interface IUserRepository : IRepositoryBridge<UserModel>
     {
-        bool AuthenticateUser(NetworkCredential credential);
-        void Add(UserModel userModel);
-        void Edit(UserModel userModel);
-        void Remove(int id);
-        UserModel GetById(int id);
-        UserModel GetByUsername(string username);
-        IEnumerable<UserModel> GetByAll();
     }
 }
