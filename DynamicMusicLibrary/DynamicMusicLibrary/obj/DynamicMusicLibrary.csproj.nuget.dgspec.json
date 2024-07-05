@@ -55,31 +55,27 @@
             },
             "ReactiveUI.Fody": {
               "target": "Package",
-              "version": "[19.4.1, )"
+              "version": "[19.5.41, )"
             },
             "ReactiveUI.WPF": {
               "target": "Package",
-              "version": "[19.4.1, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.5, )"
+              "version": "[20.1.1, )"
             },
             "System.Reactive": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.1, )"
             },
             "System.Reactive.Core": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.1, )"
             },
             "System.Reactive.Interfaces": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.1, )"
             },
             "System.Reactive.Linq": {
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.1, )"
             }
           },
           "imports": [
