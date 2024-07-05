@@ -3,6 +3,32 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:DynamicMusicLibrary"
+    xmlns:viewModel="clr-namespace:DynamicMusicLibrary.ViewModels"
+    xmlns:view="clr-namespace:DynamicMusicLibrary.Views"
     Startup="Application_Startup">
-    <Application.Resources />
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Themes/MenuButtonTheme.xaml"/>
+                <ResourceDictionary Source="Themes/SearchBarTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewModel:HomePageViewModel}">
+                <view:HomePageView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:LibraryManagementViewModel}">
+                <view:LibraryManagementView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:ImportCSVLibraryViewModel}">
+                <view:ImportCSVLibraryView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:SettingsViewModel}">
+                <view:SettingsView/>
+            </DataTemplate>
+            
+        </ResourceDictionary>
+    </Application.Resources>
 </Application>

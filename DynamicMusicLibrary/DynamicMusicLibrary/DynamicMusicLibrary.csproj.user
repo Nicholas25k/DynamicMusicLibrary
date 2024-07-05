@@ -13,6 +13,18 @@
     <Compile Update="Login\Views\UserLoginView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Views\HomePageView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ImportCSVLibraryView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\LibraryManagementView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\SettingsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Login\CustomControls\BindablePasswordBox.xaml">
@@ -22,6 +34,24 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Login\Views\UserLoginView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\MenuButtonTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\SearchBarTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\HomePageView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ImportCSVLibraryView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\LibraryManagementView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\SettingsView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -4,19 +4,92 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:DynamicMusicLibrary"
+    xmlns:viewModel="clr-namespace:DynamicMusicLibrary.ViewModels"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="MainWindow"
-    Width="800"
-    Height="450"
+    Width="920"
+    Height="600"
+    WindowStyle="None"
+    ResizeMode="NoResize"
+    Background="Transparent"
+    AllowsTransparency="True"
     mc:Ignorable="d">
-    <Grid Background="FloralWhite">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="25" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="70" />
-        </Grid.RowDefinitions>
 
-        <TextBox Text="YOU LOGGED IN!!!!!!" />
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
 
-    </Grid>
+    <Border Background="#272537" CornerRadius="20">
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+
+
+        <TextBlock Text="Your Library"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Left"
+                   Foreground="White"
+                   FontSize="22"
+                   Margin="20,0,0,0"/>
+
+            <StackPanel Grid.Row="1">
+                <RadioButton Content="Home" 
+                             Height="50" 
+                             Foreground="White" 
+                             FontSize="14" 
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding HomeViewCommand}"
+                             IsChecked="True"/>
+
+                <RadioButton Content="Library Management" 
+                             Height="50" 
+                             Foreground="White" 
+                             FontSize="14" 
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding LibraryManagementViewCommand}"/>
+
+                <RadioButton Content="Import CSV Library" 
+                             Height="50" 
+                             Foreground="White" 
+                             FontSize="14" 
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding ImportCSVLibraryViewCommand}"/>
+
+                <RadioButton Content="Settings" 
+                             Height="50" 
+                             Foreground="White" 
+                             FontSize="14" 
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding SettingsViewCommand}"/>
+
+
+            </StackPanel>
+
+            <TextBox Width="250" 
+                     Height="40" 
+                     VerticalContentAlignment="Center" 
+                     HorizontalAlignment="Left" 
+                     Margin="5" 
+                     Grid.Column="1"
+                     Style="{StaticResource SearchBarTheme}">
+                
+            </TextBox>
+
+            <ContentControl Grid.Row="1"
+                            Grid.Column="1"
+                            Margin="10"
+                            Content="{Binding CurrentView}"/>
+
+        </Grid>
+
+    </Border>
+    
 </Window>
