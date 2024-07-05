@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "rDahs6lYC4VJ7w4vXj9J0jLPk+Of+gdt5zuvsB8yGo/Hvkgx6UDIqaOOKdwTvshgPzlDdkdFJ6hQyPnhPhpALg==",
+  "dgSpecHash": "GsGmDEwja4DkuwDaja616SgdvAnMZbLAwtiNRYLuCTmsOpnzqns8P3BewUGcKzUe8o0jFJp4Zywuwe9iEv0z8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nickk\\OneDrive\\Documents\\GitHub\\DynamicMusicLibrary\\DynamicMusicLibrary\\DynamicMusicLibrary\\DynamicMusicLibrary.csproj",
+  "projectFilePath": "C:\\Users\\nickk\\source\\repos\\DynamicMusicLibrary\\DynamicMusicLibrary\\DynamicMusicLibrary\\DynamicMusicLibrary.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nickk\\.nuget\\packages\\dynamicdata\\7.14.2\\dynamicdata.7.14.2.nupkg.sha512",
     "C:\\Users\\nickk\\.nuget\\packages\\fody\\6.8.0\\fody.6.8.0.nupkg.sha512",
+    "C:\\Users\\nickk\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\nickk\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\nickk\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\nickk\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\nickk\\.nuget\\packages\\npgsql\\8.0.3\\npgsql.8.0.3.nupkg.sha512",
     "C:\\Users\\nickk\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
     "C:\\Users\\nickk\\.nuget\\packages\\reactiveui\\19.4.1\\reactiveui.19.4.1.nupkg.sha512",
     "C:\\Users\\nickk\\.nuget\\packages\\reactiveui.fody\\19.4.1\\reactiveui.fody.19.4.1.nupkg.sha512",
@@ -28,13 +31,23 @@
   ],
   "logs": [
     {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Data.SqlClient' 4.8.5 has a known high severity vulnerability, https://github.com/advisories/GHSA-98g6-xh36-x2p7",
+      "libraryId": "System.Data.SqlClient",
+      "targetGraphs": [
+        "net8.0-windows7.0"
+      ]
+    },
+    {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'ReactiveUI.WPF 19.4.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'ReactiveUI.WPF 19.4.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0-windows7.0'. This package may not be fully compatible with your project.",
       "libraryId": "ReactiveUI.WPF",
       "targetGraphs": [
-        "net6.0-windows7.0"
+        "net8.0-windows7.0"
       ]
     }
   ]

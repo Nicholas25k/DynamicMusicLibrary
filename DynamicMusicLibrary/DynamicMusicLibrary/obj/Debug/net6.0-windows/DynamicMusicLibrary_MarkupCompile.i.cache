@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\
+C:\Users\nickk\source\repos\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\obj\Debug\net6.0-windows\
 DynamicMusicLibrary
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\nickk\OneDrive\Documents\GitHub\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\App.xaml
+C:\Users\nickk\source\repos\DynamicMusicLibrary\DynamicMusicLibrary\DynamicMusicLibrary\App.xaml
 3487570927
 
 19377004143
-205-64352364
+205-1583586433
 Login\CustomControls\BindablePasswordBox.xaml;Login\Views\UserLoginView.xaml;MainWindow.xaml;
 
-False
+True
 

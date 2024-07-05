@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -14,12 +15,15 @@ namespace DynamicMusicLibrary.Database
         {
             //TODO: Probably make this implementation more dynamic. Having a hard coded connection string is fine for testing, but creating the database and
             //having the application connect to it properly is something that will need automated most likely through a wizard of some sort?
-            _connectionString = "Server=localhost\\SQLEXPRESS; Database=DynamicMusicLibraryLoginDb; Integrated Security=true; Trusted_Connection=True";
+            _connectionString = "Host=localhost; port=5432; Username=postgres; Password=a;";
         }
 
-        protected SqlConnection GetConnection()
+        protected NpgsqlConnection GetConnection()
         {
-            return new SqlConnection(_connectionString);
+            var dataSource = NpgsqlDataSource.Create(_connectionString);
+            var connection = dataSource.OpenConnection();
+            return connection;
+
         }
     }
 }
